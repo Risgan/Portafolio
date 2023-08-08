@@ -1,0 +1,22 @@
+@keyframes move-line {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(100px);
+    }
+  }
+  
+  @keyframes circle-animation {
+    0% {
+      d: path("M50,100 L150,100");
+    }
+    100% {
+      d: path("M100,100 m-50,0a50,50 0 1,0 100,0a50,50 0 1,0 -100,0");
+    }
+  }
+  
+  svg path {
+    animation: move-line 2s linear forwards, circle-animation 2s linear forwards 2s;
+  }
+  

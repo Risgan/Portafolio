@@ -1,3 +1,21 @@
 footer{
-    background: red;
+    background: var( --color-200);
+    background: linear-gradient(45deg, var(--color-600), var( --color-200));
+    background: linear-gradient(45deg, var( --color-200), var(--color-600));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 30px;
+}
+
+.derechos{
+    display: flex;
+    align-items: center;
+    p{
+        color: var(--black);
+    }
+}
+
+.derechos p{
+    margin: 0;
 }

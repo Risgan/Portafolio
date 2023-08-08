@@ -1,3 +1,82 @@
-u{
+// u{
+//     margin: 0 5px;
+//     font-size: 25px;
+//     // background: red;
+// }
+
+// i{
+//     color: red;
+//     transition: color 500ms, transform 1s;
+// }
+
+// i:hover{
+//     color: blue;
+//     transform: rotate(360deg);
+// }
+
+// a{
+//     transform: rotate(90deg);
+// }
+
+// u{
+//     transform: rotate(90deg);
+// }
+
+// div{
+//     transform: rotate(90deg);
+//     color: blue;
+
+// }
+
+// u {
+//     transition: color 12s, transform 10s; /* Agregamos transiciones para que los cambios sean gradual */
+//   }
+
+// u:hover {
+// background: blue; /* Cambiamos el color a azul en hover */
+// transform: rotate(360deg); /* Rotamos 360 grados en hover */
+// }
+
+// u:active {
+// transform: rotate(-360deg); /* Rotamos -360 grados en mouseleave */
+// }
+
+nav{
+    display: flex;
+   
+}
+
+div{
     margin: 0 5px;
+    font-size: 25px;
+}
+
+div:hover{
+    transform: rotate(360deg);
+}
+
+button:hover{
+    // background: red;
+    transform: rotate(90deg);
+}
+
+u {
+    display: inline-block;
+    transform-origin: center;
+    transition: transform 500ms;
+}
+
+u:hover {
+    // background: blue; /* Cambia el fondo a azul en hover */
+    transform: rotate(360deg); /* Rota 360 grados en hover */
+}
+
+i{
+    color: var(--gray-400);
+    transition: color 500ms;
+    color: var(--color-50);
+}
+
+i:hover{
+    color:var(--color-950);
 }

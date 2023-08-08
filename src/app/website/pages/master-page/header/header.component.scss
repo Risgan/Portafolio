@@ -5,4 +5,8 @@ header{
     align-items: center;
     padding: 7px 30px;
     // background-color: $malibu-50;
+    background: var(--color-800);
+    background: linear-gradient(45deg, var( --color-200), var(--color-600));
+    // background: linear-gradient(45deg, var(--malibu-600), var( --malibu-200));
+
 }
