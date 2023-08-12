@@ -16,6 +16,7 @@ import { ContribucionesComponent } from './pages/contribuciones/contribuciones.c
 import { ContactoComponent } from './pages/contacto/contacto.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { RedesSocialesComponent } from './pages/master-page/redes-sociales/redes-sociales.component';
+import { FloatButtonComponent } from './pages/master-page/float-button/float-button.component';
 
 
 @NgModule({
@@ -32,12 +33,13 @@ import { RedesSocialesComponent } from './pages/master-page/redes-sociales/redes
     ContribucionesComponent,
     ContactoComponent,
     NotFoundComponent,
-    RedesSocialesComponent
+    RedesSocialesComponent,
+    FloatButtonComponent
   ],
   imports: [
     CommonModule,
     WebsiteRoutingModule,
-    SharedModule
+    SharedModule,
   ]
 })
 export class WebsiteModule { }

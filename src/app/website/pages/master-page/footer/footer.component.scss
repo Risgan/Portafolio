@@ -1,7 +1,7 @@
 footer{
     background: var( --color-200);
-    background: linear-gradient(45deg, var(--color-600), var( --color-200));
-    background: linear-gradient(45deg, var( --color-200), var(--color-600));
+    // background: linear-gradient(45deg, var(--color-700), var( --color-300));
+    background: linear-gradient(45deg, var( --color-300), var(--color-700));
     display: flex;
     justify-content: space-between;
     align-items: center;

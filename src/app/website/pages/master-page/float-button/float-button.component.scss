@@ -1,0 +1,21 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.floating-button {
+    position: fixed;
+    // bottom: 20px; /* Ajusta la posición vertical */
+    right: 10px; /* Ajusta la posición horizontal */
+    // padding: 10px 20px;
+    background-color: var(--color-700);
+    color: var(--color-200);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+}

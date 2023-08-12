@@ -1,0 +1,33 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+
+\title{Ejemplo de archivo en Angular en LaTeX}
+\author{Bing}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Introducción}
+
+Este es un ejemplo de archivo en Angular en LaTeX que se puede descargar. Para descargarlo, puedes usar el método `saveAs` de la librería `file-saver` de Angular.
+
+\section{Código}
+
+El código para descargar el archivo es el siguiente:
+
+\begin{verbatim}
+import { saveAs } from 'file-saver';
+
+// Obtener el archivo desde el servicio
+this.servicio.getArchivo().subscribe((archivo) => {
+  // Convertir el archivo a un blob
+  const blob = new Blob([archivo], { type: 'application/x-latex' });
+  // Guardar el archivo con el nombre deseado
+  saveAs(blob, 'archivo.tex');
+});
+\end{verbatim}
+
+\end{document}

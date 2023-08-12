@@ -1,0 +1,13 @@
+button {
+    border: none;
+    font-size: 25px;
+    background: linear-gradient(to right, var(--color-500), var(--color-700));
+    box-shadow: 12px 12px 15px rgba(0, 0, 0, 0.2);
+    color: var(--color-100);
+    padding: 12px 25px;
+    border-radius: 35px;
+}
+
+button:hover {
+    background: linear-gradient(to bottom, var(--color-500), var(--color-700));
+  }

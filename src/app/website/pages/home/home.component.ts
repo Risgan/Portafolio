@@ -1,32 +1,26 @@
-import { AfterViewInit, Component } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import Typed from 'typed.js';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements AfterViewInit {
+export class HomeComponent implements OnInit {
+  @ViewChild('typed', { static: true }) typedElement!: ElementRef;
 
-  ngAfterViewInit(): void {
-    // const lineElement: any = document.getElementById('moving-line');
+  constructor() { }
 
-    // function animateWave() {
-    //   const amplitude = 10; // Altura máxima de la ola
-    //   const frequency = 0.1; // Frecuencia de la ola
-    //   const speed = 0.1; // Velocidad de la animación
+  ngOnInit(): void {
+    const options = {
+      strings: ['Frontend', 'Backend', 'Databases'],
+      typeSpeed: 80,
+      backSpeed: 70,
+      backDelay: 1500,
+      // startDelay: 1000,
+      loop: true
+    };
 
-    //   // Calculamos el desplazamiento vertical de la ola usando la función seno
-    //   const offsetY = amplitude * Math.sin(Date.now() * frequency * speed);
-
-    //   // Aplicamos la animación al atributo 'transform' de la línea
-    //   lineElement.setAttribute('transform', `translate(0, ${offsetY})`);
-
-    //   // Repetimos la animación en el próximo frame de animación
-    //   requestAnimationFrame(animateWave);
-    // }
-
-    // // Iniciamos la animación
-    // animateWave();
+    const typed = new Typed(this.typedElement.nativeElement, options);
   }
-
 }
