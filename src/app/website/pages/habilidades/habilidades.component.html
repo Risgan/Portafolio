@@ -1,1 +1,47 @@
-<p>habilidades works!</p>
+<div class="content">
+    <div class="header">
+        <h1>Skills</h1>
+    </div>
+</div>
+
+<div class="sub-content">
+
+    <div class="target">
+        <h2>Front-end</h2>
+        <div class="sub-target">
+            <div *ngFor="let skill of frontendSkills" class="grid-item">
+                <div class="image-container">
+                    <img [src]="skill.img" class="grayscale-image">
+                </div>
+                <span>{{ skill.nombre }}</span>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="target">
+        <h2>Back-end</h2>
+        <div class="sub-target">
+            <div *ngFor="let skill of backendSkills" class="grid-item">
+                <div class="image-container">
+                    <img [src]="skill.img" class="grayscale-image">
+                </div>
+                <span>{{ skill.nombre }}</span>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="target">
+        <h2>Bases de datos</h2>
+        <div class="sub-target">
+            <div *ngFor="let skill of databaseSkills" class="grid-item">
+                <div class="image-container">
+                    <img [src]="skill.img" class="grayscale-image">
+                </div>
+                <span>{{ skill.nombre }}</span>
+
+            </div>
+        </div>
+    </div>
+</div>
