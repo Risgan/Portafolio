@@ -1,1 +1,12 @@
-<p>experiencia works!</p>
+<div class="container-exp">
+    <app-laboral 
+        *ngFor="let experiencia of ltsExperiencia; let i = index"
+        [Numero]="i + 1"
+        [Empresa]="experiencia.Empresa"
+        [Cargo]="experiencia.Cargo"
+        [FechaInicial]="experiencia.FechaInicial"
+        [FechaFinal]="experiencia.FechaFinal"
+        [Actual]="experiencia.Actual"
+        [Funciones]="experiencia.Funciones"
+    ></app-laboral>
+</div>

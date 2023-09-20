@@ -1,0 +1,15 @@
+<div class="content">
+    <div class="target">
+        <div class="title">
+            {{Numero}} {{Empresa}}
+        </div>
+        <div class="cargo">
+            {{Cargo}} | {{FechaInicial}} - {{Actual ? "Actualmente" : FechaFinal}}
+        </div>
+        <div class="funciones">
+            <ul>
+                <li *ngFor="let funcion of Funciones">{{funcion}}</li>
+            </ul>
+        </div>
+    </div>
+</div>

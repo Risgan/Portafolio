@@ -1,0 +1,40 @@
+// .content{
+//     // display: flex;
+//     // flex-direction: column;
+//     // align-items: center;
+// }
+
+.target{
+    // width: 80%;
+    width: 30vw;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 12px 12px 15px rgba(0, 0, 0, 0.4);
+    margin-bottom: 20px;
+    background: var(--color-50);
+    transition: background 300ms;
+}
+
+.target:hover{
+    background: var(--color-100);
+
+}
+
+.title{
+    font-size: 27px;
+    font-weight: 500;
+    color: var(--color-700);
+}
+
+.cargo{
+    font-size: 23px;
+    font-weight: 400;
+    text-decoration: underline;
+    color: var(--color-800);
+    margin: 10px;
+}
+
+.funciones{
+    color: var(--color-900);
+
+}

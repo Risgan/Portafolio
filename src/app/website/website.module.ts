@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { WebsiteRoutingModule } from './website-routing.module';
@@ -17,6 +17,10 @@ import { ContactoComponent } from './pages/contacto/contacto.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { RedesSocialesComponent } from './pages/master-page/redes-sociales/redes-sociales.component';
 import { FloatButtonComponent } from './pages/master-page/float-button/float-button.component';
+import { ProyectoComponent } from './pages/proyectos/proyecto/proyecto.component';
+import {SwiperModule} from 'swiper/angular';
+import { LaboralComponent } from './pages/experiencia/laboral/laboral.component';
+import { EstudioComponent } from './pages/educacion/estudio/estudio.component';
 
 
 @NgModule({
@@ -34,12 +38,19 @@ import { FloatButtonComponent } from './pages/master-page/float-button/float-but
     ContactoComponent,
     NotFoundComponent,
     RedesSocialesComponent,
-    FloatButtonComponent
+    FloatButtonComponent,
+    ProyectoComponent,
+    LaboralComponent,
+    EstudioComponent
   ],
   imports: [
     CommonModule,
     WebsiteRoutingModule,
     SharedModule,
+    SwiperModule,
+  ],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
   ]
 })
 export class WebsiteModule { }

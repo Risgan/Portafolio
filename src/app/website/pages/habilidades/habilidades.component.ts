@@ -112,6 +112,10 @@ export class HabilidadesComponent {
       nombre: 'MongoDb',
       img: './../../../../assets/images/svg/mongodb.svg'
     },
+    {
+      nombre: 'Alfresco',
+      img: './../../../../assets/images/svg/alfresco.svg'
+    },
   ];
 
 }

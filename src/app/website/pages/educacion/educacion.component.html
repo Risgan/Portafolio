@@ -1,1 +1,11 @@
-<p>educacion works!</p>
+<div class="container-exp">
+    <app-estudio
+        *ngFor="let estudio of ltsEstudio; let i = index"
+        [Instituto]="estudio.Instituto"
+        [Carrera]="estudio.Carrera"
+        [FechaInicial]="estudio.FechaInicial"
+        [FechaFinal]="estudio.FechaFinal"
+        [Actual]="estudio.Actual"
+        [Descripcion]="estudio.Descripcion" 
+    ></app-estudio>
+</div>
