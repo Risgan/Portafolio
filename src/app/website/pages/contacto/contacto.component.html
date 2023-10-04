@@ -1,1 +1,48 @@
-<p>contacto works!</p>
+<p-toast></p-toast>
+
+<div class="contenedor">
+    <!-- <div class="contenido"> -->
+        <p class="subTitle">¡Estoy encantado de saber de ti! Puedes contactarme de las siguientes maneras:</p>
+        
+    <!-- </div> -->
+    <div class="contenido">
+        <div class="info">
+            <div class="title">Contacto</div>
+    
+            <div class="infor">
+                <p>John Alvaro Rueda Forero</p>
+                <p>Email: johnruedaf@gmail.com</p>
+                <p>Teléfono: +57 302 286-7851</p>
+            </div>
+        </div>
+        
+    
+        <!-- <br> -->
+
+        <div class="formulario">
+            <div class="title">Formulario de Contacto</div>
+            <form (submit)="sendEmail()" [formGroup]="form">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input pInputText type="text" id="nombre" name="nombre" formControlName="nombre" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input pInputText type="email" id="email" name="email" formControlName="email" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea pInputText id="mensaje" name="mensaje" formControlName="mensaje" rows="4" required></textarea>
+                </div>
+        
+                <div class="cont-button">
+                    <button type="submit" [disabled]="!form.valid">Enviar <i class="bi bi-send"></i></button>
+                </div>
+
+            </form>
+        </div>    
+    </div>
+    
+</div>

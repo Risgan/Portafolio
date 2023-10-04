@@ -21,6 +21,8 @@ import { ProyectoComponent } from './pages/proyectos/proyecto/proyecto.component
 import {SwiperModule} from 'swiper/angular';
 import { LaboralComponent } from './pages/experiencia/laboral/laboral.component';
 import { EstudioComponent } from './pages/educacion/estudio/estudio.component';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -48,6 +50,8 @@ import { EstudioComponent } from './pages/educacion/estudio/estudio.component';
     WebsiteRoutingModule,
     SharedModule,
     SwiperModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
