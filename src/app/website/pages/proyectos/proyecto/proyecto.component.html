@@ -1,7 +1,7 @@
 <div class="content" *ngFor="let proyecto of proyectos">
         <div class="target">
-            <div class="image">
-                <p-carousel [value]="proyecto.Photos" [numVisible]="1" [numScroll]="1" [circular]="true" [autoplayInterval]="2000" autoplay="true">
+            <div class="image" style="width: 400px; float: left;" layout="block">
+                <p-carousel  [value]="proyecto.Photos" [numVisible]="1" [numScroll]="1" [circular]="true" [autoplayInterval]="2000" autoplay="true">
                     <ng-template let-product pTemplate="item">
                         <div class="border-1 surface-border border-round m-2 text-center py-5 px-5">
                             <div class="mb-3">

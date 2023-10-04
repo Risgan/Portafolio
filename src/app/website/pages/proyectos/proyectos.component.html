@@ -1,2 +1,7 @@
 <!-- <p>proyectos works!</p> -->
 <app-proyecto></app-proyecto>
+
+<div *ngFor="let imageName of images">
+    <img [src]="'assets/images/png/dma' + imageName" alt="Imagen">
+    <div>{{imageName}}</div>
+  </div>
