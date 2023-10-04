@@ -1,0 +1,20 @@
+<div class="content">
+     <div class="target">
+        <div class="title">
+            {{index}} {{publicacion.Titulo}}
+        </div>
+        <div class="cargo">
+            ISBN: {{publicacion.ISBN}} | Publicador: {{publicacion.Publisher}} | Año: {{publicacion.Year}}
+            <!-- {{Carrera}} | {{FechaInicial ? FechaInicial + "-" : null}}  {{Actual ? "Actualmente" : FechaFinal}} -->
+        </div>
+        <div class="cargo">
+            
+            Url: <a [href]="publicacion.Url" target="_blank">{{publicacion.Url}}</a> 
+        </div>
+        <div class="funciones">
+            <ul>
+                <li >{{publicacion.Abstrac}}</li>
+            </ul>
+        </div>
+    </div> 
+</div>

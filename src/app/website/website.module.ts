@@ -23,6 +23,8 @@ import { LaboralComponent } from './pages/experiencia/laboral/laboral.component'
 import { EstudioComponent } from './pages/educacion/estudio/estudio.component';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { PublicacionComponent } from './pages/contribuciones/publicacion/publicacion.component';
+import { PremiosComponent } from './pages/contribuciones/premios/premios.component';
 
 
 @NgModule({
@@ -43,7 +45,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     FloatButtonComponent,
     ProyectoComponent,
     LaboralComponent,
-    EstudioComponent
+    EstudioComponent,
+    PublicacionComponent,
+    PremiosComponent
   ],
   imports: [
     CommonModule,

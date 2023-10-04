@@ -1,0 +1,15 @@
+.container-exp {
+    // background: red;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.header {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: var(--color-900);
+    margin-bottom: 5px;
+}

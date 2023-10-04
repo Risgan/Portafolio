@@ -1,1 +1,23 @@
-<p>contribuciones works!</p>
+<div class="header">
+    <h1>
+        Publicaciones Científicas
+    </h1>
+</div>
+
+<div class="container-exp">
+    <app-publicacion *ngFor="let publica of ltsContribuciones; let i = index" 
+        [publicacion]="publica"
+        [index]="i + 1"></app-publicacion>
+</div>
+
+<div class="header">
+    <h1>
+        Reconocimientos
+    </h1>
+</div>
+
+<div class="container-exp">
+    <app-premios *ngFor="let recono of ltsReconocimientos; let i = index" 
+        [reconocimiento]="recono"
+        [index]="i + 1"></app-premios>
+</div>
